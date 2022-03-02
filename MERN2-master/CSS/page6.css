@@ -1,0 +1,63 @@
+.page6 {
+    height: 90vh;
+    /* background-color: red; */
+    width: 90%;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.right-image {
+    background-image: url(../graphics/g5.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+    transform: translate(5vmax,-5vmax) scale(1.2);
+
+}
+
+.left > h1 {
+    font: 300 3vmax "Gilroy";
+    line-height: 3vmax;
+}   
+
+.googleplay, .appstore {
+    width: 10vmax;
+}
+
+
+@media screen and (max-width: 600px) {
+    .page6 {
+        margin-top: 5%;
+        flex-direction: column;
+        align-items: center; 
+        height: 40vh;
+        /* position: relative; */
+    }
+
+    .left {
+         width: 100%;
+    }
+
+    .right-image { 
+        opacity: .4;
+        z-index: -1;
+        position: absolute;
+        top: 10%;
+        bottom: 0;
+        transform: translate(6vmax,-5vmax) scale(1.4);
+        width: 100%;
+    }
+}
